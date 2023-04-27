@@ -24,44 +24,47 @@
 #
 # Cross-build for mac-x86 by mac-arm:
 # -device-option QMAKE_APPLE_DEVICE_ARCHS=x86_64
+#
+# Dir for installing sets by --prefix <path>
+#
 
-./configure -prefix /Users/ivanvostrilov/Libs/qt-6/build-qt-6.5.0 \
-  -static \
-  -debug-and-release \
-  -skip active \
-  -skip 3d \
-  -skip bluetooth \
-  -skip concurrent \
-  -skip imageformats \
-  -skip nfc \
-  -skip opcua \
-  -skip opengl \
-  -skip positioning \
-  -skip printsupport \
-  -skip remoteobjects \
-  -skip scxml \
-  -skip sensors \
-  -skip serialbus \
-  -skip serialport \
-  -skip spatialaudio \
-  -skip statemachine \
-  -skip texttospeech \
-  -skip qtwebengine \
-  -skip websockets \
-  -skip xml \
-  -skip charts \
-  -skip coap \
-  -skip datavisualization \
-  -skip mqtt \
-  -skip networkauthorization \
-  -skip quick3d \
-  -skip quick3dphysics \
-  -skip virtualkeyboard \
-  -skip waylandcompositor \
-  -skip httpserver \
-  -skip protobuf \
-  -skip grpc \
-  -skip location \
-  -nomake examples \
-  -nomake tests
+./configure -prefix <path_to_install_dir>\
+ -static \
+ -debug-and-release \
+ -skip qtactive \
+ -skip qt3d \
+ -skip qtbluetooth \
+ -skip qtconcurrent \
+ -skip qtimageformats \
+ -skip qtnfc \
+ -skip qtopcua \
+ -skip qtopengl \
+ -skip qtpositioning \
+ -skip qtprintsupport \
+ -skip qtremoteobjects \
+ -skip qtscxml \
+ -skip qtsensors \
+ -skip qtserialbus \
+ -skip qtserialport \
+ -skip qtspatialaudio \
+ -skip qtstatemachine \
+ -skip qttexttospeech \
+ -skip qtqtwebengine \
+ -skip qtwebsockets \
+ -skip qtxml \
+ -skip qtcharts \
+ -skip qtcoap \
+ -skip qtdatavisualization \
+ -skip qtmqtt \
+ -skip qtnetworkauthorization \
+ -skip qtquick3d \
+ -skip qtquick3dphysics \
+ -skip qtvirtualkeyboard \
+ -skip qtwaylandcompositor \
+ -skip qthttpserver \
+ -skip qtprotobuf \
+ -skip qtgrpc \
+ -skip qtlocation \
+ -nomake examples \
+ -nomake tests
 
